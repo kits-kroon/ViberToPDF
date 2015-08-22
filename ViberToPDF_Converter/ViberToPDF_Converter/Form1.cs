@@ -17,7 +17,7 @@ namespace ViberToPDF_Converter
             var ofd = new OpenFileDialog
             {
                 InitialDirectory = "@c:\\",
-                Filter = "csv Files (*.csv)|*.csv|All Files (*.*)|*.*",
+                Filter = @"csv Files (*.csv)|*.csv|All Files (*.*)|*.*",
                 FilterIndex = 2,
                 RestoreDirectory = true
             };
@@ -34,7 +34,7 @@ namespace ViberToPDF_Converter
                 catch (Exception ex)
                 {
                     
-                    MessageBox.Show("Could not read the file, please check the file and try again. " + ex.Message);
+                    MessageBox.Show(@"Could not read the file, please check the file and try again. " + ex.Message);
                 }
 
             }
